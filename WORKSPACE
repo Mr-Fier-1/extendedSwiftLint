@@ -1,1 +1,1 @@
-workspace(name = "extendedSwiftLint")
+workspace(name = "extended-swiftlint")

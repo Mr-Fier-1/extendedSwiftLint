@@ -42,7 +42,7 @@ rules by adding this to your `MODULE.bazel`:
 
 ```python
 extra_rules = use_extension("@SwiftLint//bazel:extensions.bzl", "extra_rules")
-extra_rules.setup(srcs = "@extendedSwiftLint//swiftlint_extra_rules:extra_rules")
+extra_rules.setup(srcs = "@extended-swiftlint//swiftlint_extra_rules:extra_rules")
 ```
 
 Finally, you'll need to tell Bazel what source files you want to compile
