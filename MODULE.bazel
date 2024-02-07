@@ -1,12 +1,12 @@
 module(
-    name = "swiftlint-bazel-example",
+    name = "extendedSwiftLint",
     version = "0.0.0",
     compatibility_level = 1,
-    repo_name = "swiftlint-bazel-example",
+    repo_name = "extendedSwiftLint",
 )
 
 bazel_dep(name = "swiftlint", version = "0.54.0", repo_name = "SwiftLint")
 extra_rules = use_extension("@SwiftLint//bazel:extensions.bzl", "extra_rules")
-extra_rules.setup(srcs = "@swiftlint-bazel-example//swiftlint_extra_rules:extra_rules")
+extra_rules.setup(srcs = "@extendedSwiftLint//swiftlint_extra_rules:extra_rules")
 
 bazel_dep(name = "rules_xcodeproj", version = "1.13.0")

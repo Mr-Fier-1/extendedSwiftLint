@@ -1,1 +1,1 @@
-workspace(name = "swiftlint-bazel-example")
+workspace(name = "extendedSwiftLint")
