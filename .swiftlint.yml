@@ -2,6 +2,4 @@ included:
  - file.swift
 
 only_rules:
- - forbidden_var
- - one_declaration_per_file
  - accessibility_label_test
