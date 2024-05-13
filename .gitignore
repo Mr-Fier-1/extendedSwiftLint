@@ -1,15 +1,16 @@
+# Bazel
 bazel-*
-SwiftLint.xcodeproj
-
 */.build
 
+# Build the xcodeproj with: bazel run :swiftlint_xcodeproj
+SwiftLint.xcodeproj
 
+# ignore base output directory 
 /bazelBuildOutput/cache
 /bazelBuildOutput/install
 /bazelBuildOutput/xcIntermediates.noindex
 
-
-
+# This is to ignore everything execpt the output directory for the SwiftLint binary 
 /bazelBuildOutput/*/*
 !/bazelBuildOutput/*/execroot/
 
